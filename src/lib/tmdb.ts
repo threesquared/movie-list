@@ -2,7 +2,7 @@ import { TmdbApi, MovieDetails } from 'tmdb-typescript-api';
 import MovieData from '../interfaces/MovieData';
 
 export default async function getMovieDetails(movies: MovieData[]): Promise<MovieData[]> {
-  const api = new TmdbApi(process.env.TMDB_KEY as string);
+  const api = new TmdbApi(process.env.REACT_APP_TMDB_KEY as string);
 
   const promises = movies.map(async movie => {
     const details = await new Promise<MovieDetails>(resolve => {
