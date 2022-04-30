@@ -23,5 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 /src/movies.json
+/src/tv.json
 /scripts
 .env
